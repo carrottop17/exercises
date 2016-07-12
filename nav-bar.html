@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css" media="screen">
+	ul{
+		/* get rid of the stupid bullet points on our list items */
+		list-style: none;
+		/* set a background color */
+		background-color: #333;
+		/* force the children to send up height */
+		overflow: hidden;
+		/* set a poistion of fixed so that when a user scrolls i stay visible */
+		position: fixed;
+		/* now that its fixed i need a set width */
+		top: 0;
+		left: 0;
+		width: 100%;
+		/* force the ul to start with 0 padding and 0 margin so the browser doesnt interfere. */
+		padding: 0px;
+		margin: 0px;
+	}
+	.menu-item{
+		/* put the list items next to each other */
+		float: left;
+		/* set the text color to white */
+		color: white;
+		/* set the padding */
+		padding: 14px 16px;
+	}
+	/* target the element with both classes menu-item and about*/
+	.menu-item.about{
+		/* set the color to greenish */
+		background-color: #4caf50;
+		/* float the element to the right of its parent */
+		float: right;
+	}
+	/* we need to set a hover background color */
+	.menu-item:hover{
+		background-color: #777;
+	}
+	#content{
+		width: 50%;
+		text-align:center;
+		margin: auto;
+		height: 150vh;
+		margin-top: 46px;
+	}
+	</style>
+</head>
+<body>
+
+	<header>
+		<ul>
+			<li class="menu-item">Home</li>
+			<li class="menu-item">News</li>
+			<li class="menu-item">Contact</li>
+			<li class="menu-item about">About</li>
+		</ul>
+	</header>
+
+	<div id="content">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css" media="screen">
+	.footer{
+		bottom: 0;
+		position: absolute;
+		display: block;
+	}
+	ul{
+		list-style: none;
+		overflow: hidden;
+		/* set a poistion of fixed so that when a user scrolls i stay visible */
+		position: fixed;
+		/* now that its fixed i need a set width */
+		top: 0;
+		left: 0;
+		width: 100%;
+		/* force the ul to start with 0 padding and 0 margin so the browser doesnt interfere. */
+		padding: 0px;
+		margin: 0px;
+	}
+	.menu-item{
+		/* put the list items next to each other */
+		float: right;
+		/* set the text color to white */
+		color: #000;
+		/* set the padding */
+		padding: 14px 16px;
+	}
+	
+	.main{
+		position:absolute;
+		left:550px;
+		top: 200px;
+	}
+	.searchbox{
+		position:absolute;
+		left:100px;
+		top: 100px;
+	}
+	.circle{
+		height:10px;
+		width:10px;
+		background-color: black;
+	}
+	input{
+		height: 36px;
+		background-color: #f2f2f2;
+    	border: 1px solid #f2f2f2;
+    	border-radius: 2px;
+    	color: #757575;
+    	cursor: default;
+    	font-family: arial,sans-serif;
+    	font-size: 13px;
+    	font-weight: bold;
+    	margin: 11px 4px;
+    	min-width: 54px;
+    	padding: 0 16px;
+    	text-align: center;
+	}
+	</style>
+</head>
+<body>
+<header>
+	<ul>
+		<div class="circle"></div>
+		<li class="menu-item"><img src="box.png"></li>
+		<li class="menu-item">Images</li>
+		<li class="menu-item about">Gmail</li>
+	</ul>
+</header>
+<div class="main">
+	<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+</div>
+<div class="searchbox">
+	<input class="search" maxlength="1000" type="text">
+</div>
+<div class="center">
+	<input value="Google Search" type="submit">
+	<input value="I'm Feeling Lucky" type="submit">
+</div>
+<!-- <div class="footer">
+	<ul>
+		<li class="menu-item">Advertising</li>
+		<li class="menu-item">Business</li>
+		<li class="menu-item">About</li>
+		<li class="menu-item">Privacy</li>
+		<li class="menu-item">Terms</li>
+		<li class="menu-item">Settings</li>
+	</ul>
+</div> -->
+</body>
+</html>
