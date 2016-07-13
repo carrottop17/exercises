@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css" media="screen">
+		html, body {
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
+		}
+		.boxes{
+			padding: -20px 0px 0px 0px;
+		}
+		li{
+			list-style: none;
+			display: inline;
+			float: right;
+			padding: 10px;
+			font-family: arial, sans-serif;
+			font-size: 12px;
+		}
+		.circle{
+			width: 20px;
+			height: 20px;
+			background-color: black;
+			border-radius: 50%;
+		}
+		.center{
+			margin: auto;
+			position: absolute;
+			left: 300px;
+			top: 200px;
+			width: 600px;
+			text-align: center;
+		}
+		.mic{
+			height: 25px;
+			width: 25px;
+		}
+		input[type="text"] {
+    		width: 500px;
+    		height: 26px;
+    	}
+    	input[type="submit"]{
+    		background-color: #f2f2f2;
+    		border: 1px solid #f2f2f2;
+    		border-radius: 2px;
+    		color: #757575;
+    		cursor: default;
+    		font-family: arial,sans-serif;
+    		font-size: 13px;
+    		font-weight: bold;
+    		margin: 11px 4px;
+    		min-width: 54px;
+    		padding: 0 16px;
+    		text-align: center;
+    		height: 36px;
+    		line-height: 27px;
+    	}
+    	.footer{
+    		position: absolute;
+  			right: 0;
+  			bottom: 0;
+  			left: 0;
+  			background-color: #efefef;
+    	}
+    	.left{
+    		float: left;
+    		padding-left: 27px;
+    	}
+    	.right{
+    		float: right;
+    		padding-right: 27px;
+    	}
+	</style>
+</head>
+<body>
+	<header>
+		<ul>
+			<li><div class="circle"></div></li>
+			<li><div class="boxes"><img src="box.png"></div></li>
+			<li>Images</li>
+			<li>Gmail</li>
+		</ul>
+	</header>
+	<div class="center">
+		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+		<input type="text">
+		<img class="mic" src="mic.png">
+		<input value="Google Search" type="submit">
+		<input value="I'm Feeling Lucky" type="submit">
+	</div>
+	<div class="footer">
+		<ul>
+			<li class="left">Advertising</li>
+			<li class="left">Business</li>
+			<li class="left">About</li>
+			<li class="right">Settings</li>
+			<li class="right">Terms</li>
+			<li class="right">Privacy</li>
+		</ul>
+	</div>
+</body>
+</html>
