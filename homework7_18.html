@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+	var sum = 0
+	for(var i = 0; i < 1001; i++) {
+		if ((i % 3 === 0) || (i % 5 === 0)) {
+			sum += i;
+		}
+	}
+	console.log(sum);
+
+	var j;
+    var fib = [];
+    var sumNext = 0;
+
+    fib[0] = 1;
+    fib[1] = 2;
+    for(j=2; j<=100; j++) {
+        fib[j] = fib[j-2] + fib[j-1];
+        if ((fib[j] % 2 === 0) && (fib[j] < 4000000)) {
+              sumNext += fib[j];
+        }       
+    }
+    console.log(sumNext);
+
+</script>
+</body>
+</html>
