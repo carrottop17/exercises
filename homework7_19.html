@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	var string = "I want to be in uppercase."
+	string = string.toUpperCase();
+	console.log(string);
+
+	var capString = "capitalize first letter."
+	capString = capString[0].toUpperCase() + capString.slice(1);
+	console.log(capString);
+
+	var stringReverse = "reverse me"
+	function reverse(stringReverse) {
+  		return stringReverse.split('').reverse().join('');
+	}
+	console.log(reverse(stringReverse));
+
+	// var palindrom = "A but tuba.";
+	// function testPalindrom(palindrom) {
+	// 	for (var i = 0; i < palindrom.length; i++) {
+	// 		if (i == " " || i == ".") {
+	// 			var sliced = palindrom.slice(i, (i - 1));
+	// 		}
+	// 	}
+	// 	return sliced;
+	// }
+	// console.log(testPalindrom(sliced));
+
+	var palindrom = "Hello There";
+
+	var strippedPalindrom = palindrom.replace(/[^\w\s]|_/g, "");
+	strippedPalindrom = strippedPalindrom.replace(/\s/g, '');
+	strippedPalindrom = strippedPalindrom.toLowerCase();
+	// for(var i = 0; i < palindrom.length; i++) {
+	if(strippedPalindrom[0] == strippedPalindrom[strippedPalindrom.length-1]) {
+		console.log(palindrom + " is a palindrom.");
+	}else{
+		console.log(palindrom + " is not a palindrom.")
+	};
+
+	var paragraph = "This is a sample paragraph. This is the second sentence in this sample paragraph.";
+	var words = 0
+	for (var i = 0; i < paragraph.length; i++) {
+		if(paragraph[i] == ' ') {
+			words = words + 1;
+		}
+	}
+	console.log(words + 1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
